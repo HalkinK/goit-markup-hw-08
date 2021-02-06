@@ -1,0 +1,58 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $dark-background-color;
+
+  &-box {
+    display: inline-flex;
+
+    margin: 0;
+    padding: 0;
+
+    width: 1170px;
+  }
+
+  &-logo {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    margin-right: auto;
+    padding-right: auto;
+  }
+
+  &-addr {
+    display: block;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+  }
+
+  &-mail {
+    display: inline-block;
+    margin-bottom: 9px;
+  }
+
+  &-link {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.address-box {
+  display: inline-flex;
+
+  margin-right: 70px;
+}
+
+.white-text {
+  display: inline-block;
+  margin-bottom: 9px;
+
+  color: #ffffff;
+}
+
+@import 'footer-join';
+@import 'footer-subscribe';
+@import 'footer-social-links';

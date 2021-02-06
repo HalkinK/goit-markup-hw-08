@@ -1,0 +1,15 @@
+.logo {
+  font-family: $sec-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+
+  &-color {
+    color: $accent-color;
+  }
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,83 @@
+.checkbox {
+  padding-right: 51px;
+  padding-left: 52px;
+  margin-bottom: 30px;
+
+  &-text {
+    margin-left: 24px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+  }
+
+  &-label {
+    display: inline-block;
+
+    position: relative;
+  }
+
+  &-icon {
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 15px;
+
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.terms {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+
+  color: $accent-color;
+}
+
+.old-checkbox:checked ~ .checkbox-icon {
+  background-image: url(../images/form_svg/iconcheck.svg);
+  fill: $accent-color;
+}
+
+.send-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #188ce8;
+
+  cursor: pointer;
+
+  padding-right: 55px;
+  padding-left: 56px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  outline: transparent;
+
+  color: #ffffff;
+  background-color: #188ce8;
+  border-color: #188ce8;
+}

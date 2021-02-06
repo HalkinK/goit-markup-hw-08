@@ -1,0 +1,100 @@
+.advantages {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.adv-icon-container {
+  width: 100%;
+  height: 120px;
+
+  margin-bottom: 30px;
+  padding: 25px 190px;
+
+  background-color: $main-background-color;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 120px;
+    padding: 25px 190px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+    padding: 25px 142px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+  }
+}
+
+.advantage {
+  padding-left: 0;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $main-text-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 270px;
+    }
+  }
+
+  &-descr {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $sec-text-color;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 270px;
+    }
+  }
+}

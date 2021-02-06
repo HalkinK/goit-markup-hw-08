@@ -1,0 +1,19 @@
+.join {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 12px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+
+    margin-bottom: 20px;
+  }
+}

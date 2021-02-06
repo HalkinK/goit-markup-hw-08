@@ -1,0 +1,47 @@
+.advantages {
+  padding: 94px 0;
+}
+
+.adv-icon-container {
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  padding: 25px 100px;
+
+  background-color: $main-background-color;
+}
+
+.advantage {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+
+    width: 270px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $main-text-color;
+  }
+
+  &-descr {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    width: 270px;
+
+    color: $sec-text-color;
+  }
+}
