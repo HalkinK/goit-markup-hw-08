@@ -704,6 +704,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
 }
@@ -940,27 +942,29 @@ h2 {
 }
 
 .footer-box {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
   padding: 0;
-  width: 1170px;
 }
 
 .footer-logo {
-  display: inline-block;
+  display: block;
+  margin-left: 148px;
+  margin-right: 148px;
+  margin-top: 0;
   margin-bottom: 20px;
-  margin-right: auto;
-  padding-right: auto;
 }
 
 .footer-addr {
   display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+  margin-bottom: 60px;
 }
 
 .footer-mail {
@@ -972,13 +976,6 @@ h2 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address-box {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 70px;
-}
-
 .white-text {
   display: inline-block;
   margin-bottom: 9px;
@@ -986,7 +983,7 @@ h2 {
 }
 
 .join {
-  display: inline-block;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -994,21 +991,23 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 12px;
+  margin-bottom: 60px;
 }
 
 .join-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
   text-align: left;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .subscribe {
-  display: inline-block;
+  display: block;
   margin-left: auto;
   padding-top: 12px;
 }
@@ -1022,6 +1021,7 @@ h2 {
   color: #fff;
   text-align: left;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .subscribe-email {
@@ -1029,16 +1029,11 @@ h2 {
   margin-right: 12px;
 }
 
-.form-footer {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .footer-input {
   display: inline-block;
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -1070,6 +1065,8 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
+  margin-left: 125px;
+  margin-right: 125px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;

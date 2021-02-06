@@ -5,29 +5,33 @@
   background-color: $dark-background-color;
 
   &-box {
-    display: inline-flex;
+    // display: inline-flex;
 
     margin: 0;
     padding: 0;
 
-    width: 1170px;
+    // width: 1170px;
   }
 
   &-logo {
-    display: inline-block;
+    display: block;
+    margin-left: 148px;
+    margin-right: 148px;
 
+    margin-top: 0;
     margin-bottom: 20px;
-    margin-right: auto;
-    padding-right: auto;
   }
 
   &-addr {
     display: block;
-
+    align-items: center;
+    text-align: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
+
+    margin-bottom: 60px;
   }
 
   &-mail {
@@ -41,9 +45,9 @@
 }
 
 .address-box {
-  display: inline-flex;
+  // display: inline-flex;
 
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 
 .white-text {
