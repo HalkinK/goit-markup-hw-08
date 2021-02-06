@@ -94,6 +94,18 @@ h2 {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
+
 .menu-button {
   width: 40px;
   height: 40px;
@@ -182,22 +194,36 @@ h2 {
 }
 
 .header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 0;
   padding-left: 0;
 }
 
+.header-contacts .item {
+  display: block;
+}
+
 .header-contacts .item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 767px) {
   .header-contacts {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-contacts .item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -208,8 +234,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
@@ -218,6 +242,13 @@ h2 {
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-contact:hover, .header-contact:focus {

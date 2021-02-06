@@ -1,24 +1,40 @@
 .header-contacts {
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 0;
+
   padding-left: 0;
 
-  .item:not(:last-child) {
-    margin-right: 50px;
+  .item {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    .item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .header-contact {
   display: inline-flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   cursor: pointer;
 
