@@ -3,8 +3,13 @@
   padding-left: 52px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 51px;
+    padding-left: 52px;
   }
 
   &-text {
@@ -18,10 +23,12 @@
       letter-spacing: 0.03em;
     }
 
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    }
 
     color: #757575;
   }
@@ -58,10 +65,13 @@
     letter-spacing: 0.03em;
   }
 
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
   text-decoration: underline;
 
   color: $accent-color;
