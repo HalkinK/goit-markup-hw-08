@@ -6,20 +6,33 @@
 
   &-box {
     // display: inline-flex;
-
     margin: 0;
     padding: 0;
+
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+
+      width: 1170px;
+    }
 
     // width: 1170px;
   }
 
   &-logo {
-    display: block;
-    margin-left: 148px;
-    margin-right: 148px;
+    display: inline-block;
 
     margin-top: 0;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 148px;
+      margin-right: 148px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-left: 102px;
+      margin-right: 0;
+    }
   }
 
   &-addr {
@@ -32,6 +45,10 @@
     font-style: normal;
 
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 63px;
+    }
   }
 
   &-mail {
@@ -45,7 +62,9 @@
 }
 
 .address-box {
-  // display: inline-flex;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
 
   // margin-right: 70px;
 }

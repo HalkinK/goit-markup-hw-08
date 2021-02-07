@@ -946,12 +946,33 @@ h2 {
   padding: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 1170px;
+  }
+}
+
 .footer-logo {
-  display: block;
-  margin-left: 148px;
-  margin-right: 148px;
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-logo {
+    margin-left: 148px;
+    margin-right: 148px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    margin-left: 102px;
+    margin-right: 0;
+  }
 }
 
 .footer-addr {
@@ -967,6 +988,12 @@ h2 {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-addr {
+    margin-left: 63px;
+  }
+}
+
 .footer-mail {
   display: inline-block;
   margin-bottom: 9px;
@@ -976,6 +1003,14 @@ h2 {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 768px) {
+  .address-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
 .white-text {
   display: inline-block;
   margin-bottom: 9px;
@@ -983,15 +1018,31 @@ h2 {
 }
 
 .join {
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 12px;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .join {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 74px;
+    margin-left: 165px;
+  }
 }
 
 .join-title {
@@ -1012,6 +1063,24 @@ h2 {
   padding-top: 12px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .subscribe-title {
   font-weight: 700;
   font-size: 14px;
@@ -1026,7 +1095,12 @@ h2 {
 
 .subscribe-email {
   display: inline-block;
-  margin-right: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-email {
+    margin-right: 12px;
+  }
 }
 
 .footer-input {
