@@ -975,6 +975,14 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: auto;
+  }
+}
+
 .footer-addr {
   display: block;
   -webkit-box-align: center;
@@ -991,6 +999,14 @@ h2 {
 @media screen and (min-width: 768px) {
   .footer-addr {
     margin-left: 63px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-addr {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
   }
 }
 
@@ -1045,6 +1061,13 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    margin-right: 0;
+  }
+}
+
 .join-title {
   font-weight: 700;
   font-size: 14px;
@@ -1081,6 +1104,13 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+
 .subscribe-title {
   font-weight: 700;
   font-size: 14px;
@@ -1093,6 +1123,12 @@ h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-title {
+    text-align: left;
+  }
+}
+
 .subscribe-email {
   display: inline-block;
 }
@@ -1100,6 +1136,14 @@ h2 {
 @media screen and (min-width: 1200px) {
   .subscribe-email {
     margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
@@ -1128,6 +1172,12 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
+}
+
 .subscribe-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1145,8 +1195,6 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
-  margin-left: 125px;
-  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1156,6 +1204,13 @@ h2 {
   color: #ffffff;
   background-color: #2196f3;
   border-color: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-btn {
+    margin-left: 125px;
+    margin-right: auto;
+  }
 }
 
 .subscribe-btn::after {
