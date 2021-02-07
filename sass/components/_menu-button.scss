@@ -1,6 +1,4 @@
 .menu-button {
-  width: 40px;
-  height: 40px;
   margin-left: auto;
   padding: 0;
 
@@ -10,10 +8,15 @@
   cursor: pointer;
 
   &__img {
+    position: relative;
     fill: currentColor;
 
-    &:hover,
-    &:focus {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    & .icon-menu:hover,
+    & .icon-menu:focus,
+    & .icon-close-menu:hover,
+    & .icon-close-menu:focus {
       fill: $accent-color;
     }
   }
@@ -22,3 +25,50 @@
     display: none;
   }
 }
+
+// .icon-menu:hover,
+// .icon-menu:focus {
+//   fill: $accent-color;
+// }
+
+.menu-button .icon-close-menu {
+  display: none;
+  position: absolute;
+}
+
+.menu-button.is-open .icon-close-menu {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.header {
+  position: relative;
+}
+
+.menu-container {
+  display: none;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  // width: 480px;
+  // height: 796px;
+
+  // margin: 0;
+  // padding: 0;
+
+  padding: 48px 40px;
+  padding-right: 80px;
+
+  // border: solid 1px red;
+  background-color: #fff;
+  &.is-open {
+    display: block;
+  }
+}
+
+@import 'mobile-menu';

@@ -36,12 +36,51 @@
             </li>
          </ul>
 
-         <button class="menu-button" type="button">
+            <!-- Меню для мобайл версии -->
+
+            <div class="menu-container" id="menu-container" data-menu>
+                <ul class="menu-links">
+                    <li class="item"><a class="menu-link current" href="">Студия</a></li>
+                    <li class="item"><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="menu-link" href="">Контакты</a></li>
+                </ul> 
+                
+                <ul class="menu-contacts">
+                    <li class="item">
+                        <a class="menu-tel" href="">+38 096 111 11 11</a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-mail" href="">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="menu-social">
+                    <li class="item">
+                        <a class="menu-social__link" href="">Instagram</a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-social__link" href="">Twitter</a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-social__link" href="">Facebook</a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-social__link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+         <button class="menu-button" type="button" data-menu-button aria-expanded="true" aria-controls="menu-container">
              <svg width="40px" height="40px" class="menu-button__img" aria-label="Переключатель мобильного меню">
-                 <use href="./images/symbol-defs.svg#icon-menu-40px"></use>
-                 <use href="./images/symbol-defs.svg#icon-close-menu-40px"></use>
-             </svg>
+                 <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-40px"></use>
+                <use class="icon-close-menu" href="./images/symbol-defs.svg#icon-close-menu-40px"></use>
+                 
+                </svg>
          </button>
+
+        <script src="./js/menu.js"></script>
 
          
         </div>
@@ -439,6 +478,7 @@
     
         </div>
     </footer>
+
 
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
