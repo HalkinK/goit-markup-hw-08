@@ -124,7 +124,17 @@
                 <li class="works-item">
                   <a class="link" href="">
                   <div class="works-img">
-                    <img src="./images/portfolio/Технокряк.jpg" alt="На экране ноутбука отображен веб-сфйт" width="370">
+                    <!-- <img src="./images/portfolio/Технокряк.jpg" alt="На экране ноутбука отображен веб-сфйт" width="370"> -->
+                    <picture>
+                      <source srcset="./images/portfolio/portfolio-mobile/tech@2x.jpg 2x, ./images/portfolio/portfolio-mobile/tech@3x.jpg 3x"
+                        media="(min-width: 480px)"  />
+                      <source srcset="./images/portfolio/portfolio-mobile/tech@2x.jpg 2x, ./images/portfolio/portfolio-mobile/tech@3x.jpg 3x"
+                        media="(min-width: 768px)"  />
+                      <source srcset="./images/portfolio/portfolio-mobile/tech@2x.jpg 2x, ./images/portfolio/portfolio-mobile/tech@3x.jpg 3x"
+                        media="(min-width: 1200px)"  />
+                      <img class="port-img" src="./images/portfolio/portfolio-mobile/tech.jpg" alt="На экране ноутбука отображен веб-сайт" >
+                    </picture>
+
                     <div class="overlay">
                       <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
