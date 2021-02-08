@@ -7,8 +7,15 @@
 }
 
 .adv-icon-container {
+  // @media screen and (max-width: 479px) {
+  //   margin-right: 0;
+
+  //   display: block;
+  // }
+
   margin-bottom: 30px;
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   padding-left: 50%;
   padding-right: 50%;
 
