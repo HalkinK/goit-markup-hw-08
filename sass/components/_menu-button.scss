@@ -7,6 +7,8 @@
 
   cursor: pointer;
 
+  z-index: 1;
+
   &__img {
     position: relative;
     fill: currentColor;
@@ -53,19 +55,19 @@
 
   position: absolute;
 
+  z-index: 1;
+
   top: 0;
   left: 0;
-  // width: 480px;
-  // height: 796px;
 
-  // margin: 0;
-  // padding: 0;
+  width: 480px;
+  height: 100vh;
 
   padding: 48px 40px;
   padding-right: 80px;
 
-  // border: solid 1px red;
   background-color: #fff;
+
   &.is-open {
     display: block;
   }

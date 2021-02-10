@@ -112,6 +112,7 @@ h2 {
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 
 .menu-button__img {
@@ -154,8 +155,11 @@ h2 {
 .menu-container {
   display: none;
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
+  width: 480px;
+  height: 100vh;
   padding: 48px 40px;
   padding-right: 80px;
   background-color: #fff;
@@ -1570,6 +1574,7 @@ h2 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+    z-index: 2;
   }
 }
 
