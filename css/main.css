@@ -166,14 +166,19 @@ h2 {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menu-links {
   display: inline-block;
   padding-left: 0;
   margin: 0;
-  margin-bottom: 302px;
 }
 
 .menu-link {
@@ -200,6 +205,7 @@ h2 {
   padding-left: 0;
   margin: 0;
   margin-bottom: 64px;
+  margin-top: auto;
 }
 
 .menu-contacts .menu-tel {

@@ -53,6 +53,9 @@
 .menu-container {
   display: none;
 
+  // display: flex;
+  // flex-direction: column;
+
   position: absolute;
 
   z-index: 1;
@@ -69,7 +72,9 @@
   background-color: #fff;
 
   &.is-open {
-    display: block;
+    // display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
