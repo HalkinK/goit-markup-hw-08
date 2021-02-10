@@ -52,6 +52,9 @@
     letter-spacing: 0.03em;
     font-style: normal;
 
+    // @media scren and (max-width: 1199px) {
+    //   margin-bottom: 60px;
+    // }
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
@@ -62,6 +65,7 @@
       margin-right: auto;
       margin-left: auto;
       text-align: left;
+      margin-bottom: 0;
     }
   }
 

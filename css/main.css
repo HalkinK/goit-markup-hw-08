@@ -1303,6 +1303,7 @@ h2 {
     margin-right: auto;
     margin-left: auto;
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -1330,8 +1331,8 @@ h2 {
 }
 
 .join {
-  padding-top: 12px;
   margin-bottom: 60px;
+  padding-top: 12px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1361,6 +1362,7 @@ h2 {
   .join {
     margin-left: 70px;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
