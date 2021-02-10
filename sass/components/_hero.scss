@@ -24,7 +24,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-mobile/Hero_img.jpg);
+      url(../images/hero/hero-mobile/Hero_img.jpg);
 
     // @media (min-width: 480px) {
     //   .hero-image {
@@ -140,7 +140,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-mobile/Hero_img.jpg);
+      url(../images/hero/hero-mobile/Hero_img.jpg);
   }
 
   @media (min-resolution: 2dppx) {
@@ -150,7 +150,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/hero-mobile/Hero_img@2x.jpg);
+        url(../images/hero/hero-mobile/Hero_img@2x.jpg);
     }
   }
 }
@@ -162,7 +162,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-tablet/Hero-tab.jpg);
+      url(../images/hero/hero-tablet/Hero-tab.jpg);
   }
 
   @media (min-resolution: 2dppx) {
@@ -172,7 +172,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/hero-tablet/Hero-tab@2x.jpg);
+        url(../images/hero/hero-tablet/Hero-tab@2x.jpg);
     }
   }
 }
@@ -186,7 +186,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-desctop/Hero-desc.jpg);
+      url(../images/hero/hero-desctop/Hero-desc.jpg);
   }
 
   @media (min-resolution: 2dppx) {
@@ -196,7 +196,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/hero-desctop/Hero-desc@2x.jpg);
+        url(../images/hero/hero-desctop/Hero-desc@2x.jpg);
     }
   }
 }
